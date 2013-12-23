@@ -407,7 +407,7 @@ JUST ENTER YOUR DETAILS BELOW" class="rig_text">
                     <div class="clearfix"></div>
                     <div class="control-group full">
                         <div class="controls">
-                            <label class="checkbox"><input type="checkbox" name="terms" value="1"><span>I confirm that I am a UK resident over the age of 18 and have <a href="tandc.php">read and understood the terms and conditions</a><span class="astrix">*</span></span></label>
+                            <label class="checkbox"><input type="checkbox" name="terms" value="1"><span>I confirm that I am a UK resident over the age of 16 and have <a href="tandc.php">read and understood the terms and conditions</a><span class="astrix">*</span></span></label>
                            <!--  <span class="help-block">I confirm that I am a UK resident over the age of 18 and have <a href="tandc.php">read and understood the terms and conditions</a></span> -->
                         </div>
                     </div>

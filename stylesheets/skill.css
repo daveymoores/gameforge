@@ -1,0 +1,351 @@
+/** skill scss **/
+/* line 3, ../sass/skill.scss */
+body {
+  background-color: black;
+  font-family: 'helvetica-neue', helvetica, sans-serif;
+}
+
+/* line 8, ../sass/skill.scss */
+.orbit-bullets {
+  margin: 10px auto;
+  display: block;
+  width: 90px;
+  margin-top: -30px;
+  top: auto;
+  height: 12px;
+  left: 50%;
+  margin-left: -35px;
+  z-index: 9999;
+}
+/* line 19, ../sass/skill.scss */
+.orbit-bullets li {
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  border: none;
+  -moz-box-shadow: 0px 1px 3px 0px #000000;
+  -webkit-box-shadow: 0px 1px 3px 0px #000000;
+  box-shadow: 0px 1px 3px 0px #000000;
+  margin-right: 8px;
+}
+/* line 29, ../sass/skill.scss */
+.orbit-bullets li.active {
+  background: #d58d21;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d58d21 0%, #b67007 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d58d21), color-stop(100%, #b67007));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #d58d21 0%, #b67007 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #d58d21 0%, #b67007 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #d58d21 0%, #b67007 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d58d21 0%, #b67007 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d58d21', endColorstr='#b67007',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 42, ../sass/skill.scss */
+.car_text {
+  background: transparent url(../assets/images/opacity_60.png) top center repeat;
+  height: 202px;
+  display: block;
+  position: absolute;
+  z-index: 99;
+  width: 728px;
+  margin-top: -191px;
+}
+/* line 51, ../sass/skill.scss */
+.car_text p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  font-weight: 100;
+}
+
+/* line 60, ../sass/skill.scss */
+.rig_text {
+  margin: 45px 0px 20px;
+  float: right;
+}
+
+/* line 65, ../sass/skill.scss */
+.orbit-container {
+  height: 500px;
+  overflow: hidden;
+}
+
+/* line 70, ../sass/skill.scss */
+#competition {
+  background: black url(../assets/images/background_fade.png) no-repeat top center;
+  background-size: 100% 100%;
+}
+/* line 74, ../sass/skill.scss */
+#competition .form_cont {
+  padding: 0px;
+}
+
+/* line 79, ../sass/skill.scss */
+.register_btn {
+  position: absolute;
+  z-index: 999;
+  float: left;
+  display: block;
+  margin-top: 5%;
+  margin-left: -85px;
+}
+/* line 87, ../sass/skill.scss */
+.register_btn.skill {
+  margin-top: 12%;
+  float: none;
+  margin-left: -246px;
+  left: 50%;
+}
+/* line 93, ../sass/skill.scss */
+.register_btn.skill.bundle {
+  margin-top: 2%;
+}
+
+/**form **/
+/* line 101, ../sass/skill.scss */
+fieldset {
+  border: 1px solid #965c0f;
+  border-radius: 3px;
+  background-color: #0F0F0F;
+  color: white;
+}
+/* line 107, ../sass/skill.scss */
+fieldset label {
+  font-weight: 300;
+  color: white;
+  padding-bottom: 10px;
+}
+/* line 113, ../sass/skill.scss */
+fieldset input[type="text"] {
+  background-color: #ABABAB;
+  border: 1px solid #ababab;
+}
+/* line 119, ../sass/skill.scss */
+fieldset .button {
+  background-image: url(../assets/images/button.png);
+  width: 256px;
+  height: 54px;
+  display: block;
+  border: none;
+  -moz-box-shadow: 0px 1px 3px 0px #000000;
+  -webkit-box-shadow: 0px 1px 3px 0px #000000;
+  box-shadow: 0px 1px 3px 0px #000000;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 20px auto;
+}
+
+/**end form**/
+/**prizing boxes**/
+/* line 138, ../sass/skill.scss */
+.forge_cont {
+  border: 1px solid #965c0f;
+  border-radius: 3px;
+  height: 132px;
+  margin: 20px 0px;
+}
+/* line 144, ../sass/skill.scss */
+.forge_cont.pc {
+  background: transparent url(../assets/images/pattern.png) top center repeat;
+  -moz-box-shadow: inset 0px 0px 20px 0px #83581b;
+  -webkit-box-shadow: inset 0px 0px 20px 0px #83581b;
+  box-shadow: inset 0px 0px 20px 0px #83581b;
+}
+/* line 151, ../sass/skill.scss */
+.forge_cont.pc img {
+  position: absolute;
+  bottom: -14px;
+}
+/* line 156, ../sass/skill.scss */
+.forge_cont.pc p {
+  color: white;
+  width: 65%;
+  float: right;
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 23px;
+  padding-top: 17px;
+}
+/* line 166, ../sass/skill.scss */
+.forge_cont.pc a {
+  font-weight: 500;
+  color: white;
+}
+
+/* line 173, ../sass/skill.scss */
+.roccat {
+  border-radius: 3px;
+  padding-bottom: 3px;
+  height: 199px;
+  background-size: 80px 60px;
+  background: url(../assets/images/roccat_bg.jpg) top center;
+}
+/* line 181, ../sass/skill.scss */
+.roccat .forge_cont {
+  padding: 10px;
+  border: none;
+}
+/* line 186, ../sass/skill.scss */
+.roccat .prize-cont {
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+/* line 193, ../sass/skill.scss */
+.roccat .prize-cont p {
+  color: white;
+  width: 100%;
+  height: 40px;
+  background: transparent url(../assets/images/opacity_60.png) top center repeat;
+  margin-top: -30px;
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  padding-top: 8px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom: 2px solid white;
+  font-weight: 100;
+}
+
+/**text image placement**/
+/* line 216, ../sass/skill.scss */
+.runner_up-img {
+  margin-top: 10px;
+  display: block;
+}
+
+/**end text image placement**/
+/* line 226, ../sass/skill.scss */
+.small_txt p {
+  color: white;
+  font-size: 9px;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* line 236, ../sass/skill.scss */
+.alert li {
+  list-style: none;
+  background-color: #f5dfdf;
+  border-color: #FE1002;
+  text-align: center;
+  font-size: 14px;
+  padding: 7px 0px;
+  margin-bottom: 10px;
+}
+
+/* line 246, ../sass/skill.scss */
+.checkbox {
+  font-weight: 100;
+  font-size: 14px;
+}
+/* line 250, ../sass/skill.scss */
+.checkbox span {
+  width: 95%;
+  display: block;
+  float: right;
+  line-height: 18px;
+  padding-top: 0px;
+}
+/* line 257, ../sass/skill.scss */
+.checkbox span.astrix {
+  width: auto;
+  float: none;
+  display: inline-block;
+}
+/* line 263, ../sass/skill.scss */
+.checkbox span a {
+  color: white;
+}
+
+/* line 269, ../sass/skill.scss */
+.control-group {
+  margin: 15px 0px;
+}
+
+/* line 273, ../sass/skill.scss */
+.orbit-slide-number, .orbit-timer {
+  display: none;
+}
+
+/* line 277, ../sass/skill.scss */
+.social-btns {
+  list-style: none;
+}
+
+/* line 282, ../sass/skill.scss */
+.thanks #competition {
+  padding-top: 25px;
+  height: 550px;
+}
+/* line 287, ../sass/skill.scss */
+.thanks #competition img {
+  margin: 45px auto;
+  display: block;
+}
+/* line 293, ../sass/skill.scss */
+.thanks #competition .return {
+  background-image: url(../assets/images/return.png);
+  width: 256px;
+  height: 54px;
+  display: block;
+  border: none;
+  -moz-box-shadow: 0px 1px 3px 0px #000000;
+  -webkit-box-shadow: 0px 1px 3px 0px #000000;
+  box-shadow: 0px 1px 3px 0px #000000;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 20px auto;
+}
+/* line 307, ../sass/skill.scss */
+.thanks #competition .play {
+  background-image: url(../assets/images/play_btn.png);
+  width: 256px;
+  height: 54px;
+  display: block;
+  border: none;
+  -moz-box-shadow: 0px 1px 3px 0px #000000;
+  -webkit-box-shadow: 0px 1px 3px 0px #000000;
+  box-shadow: 0px 1px 3px 0px #000000;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 20px auto;
+}
+
+/* line 323, ../sass/skill.scss */
+.light_blue {
+  color: #B3E2F7;
+  font-weight: 500;
+}
+
+/* line 328, ../sass/skill.scss */
+.astrix {
+  color: #e24545;
+  font-size: 12px;
+  margin-left: 3px;
+  line-height: 22px;
+}
+
+/* line 335, ../sass/skill.scss */
+.req_field-text {
+  color: #e24545;
+  font-size: 12px;
+  margin-left: 30px;
+}

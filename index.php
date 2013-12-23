@@ -1,27 +1,5 @@
 <?php
 
-/*checks whether cookie has been set - 
-	- if cookie not set redirect to form page
-	- if cookie under age redirect to fail page
-	- if over age display welcome message
-	*/
-	
-if (isset($_COOKIE["age"]))
-	{
-	if ($_COOKIE["age"] == "under") {
- 		header('Location: form.php');
-	}
-	
-	/*else if ($_COOKIE["age"] == "over")
-	{
-		echo "welcome to the over 18 page";
-	}*/	}		
-	else  header('Location: form.php');
-
-?>
-
-<?php
-
 /////////////////////////////////////////
 // @ Example usage of the HK API
 // @ 15th February 2013
@@ -35,45 +13,46 @@ $competition = new HkCompAPI();
 
     if(isset($_POST['_submit'])){
     
-    	$_POST['dob'] = $_POST['_year'].'-'.$_POST['_month'].'-'.$_POST['_day'];
+        $_POST['dob'] = $_POST['_year'].'-'.$_POST['_month'].'-'.$_POST['_day'];
     
-	    $validation = array(
-	
-	    	//@ Format of the array is as follows:
-	    	//@ Input Value Name
-	    	//@ Error Message
-	    	//@ Required, valid_email, over_18, captcha (value must be blank)    	
-	    	
-			array('fname', 		"Please enter your first name",   			 'required'),
-			array('lname', 		"Please enter your last name",    			 'required'),
-			array('dob',  		"This promotion is open to users over 18!",	 'over_18'),
-			array('email', 		"Please enter a valid email address", 		 'valid_email'),
-			array('terms', 		"Please Accept the Terms &amp; Conditions",	 'required'),
-			array('_captcha',	"We're not sure you're a human...", 		 'captcha')
-	
-		);  
-		
-		// validate for errors
-		$errors = $competition->validate($validation);
-		
-		// validate returns FALSE if no errors are found
-		if($errors===FALSE){
-			// save the data via the api call with the campaign name
-        	$save = $competition->save('ign_injustice');
-        	        	
-        	if(isset($save['_auth']) && $save['_auth']=='failed'){
-	        	echo 'Error Authenticating With the API';     	  	
-        	}
+        $validation = array(
+    
+            //@ Format of the array is as follows:
+            //@ Input Value Name
+            //@ Error Message
+            //@ Required, valid_email, over_18, captcha (value must be blank)       
+            
+            array('fname',      "Please enter your first name",              'required'),
+            array('lname',      "Please enter your last name",               'required'),
+            //array('dob',        "This promotion is open to users over 18!",  'over_18'),
+            array('email',      "Please enter a valid email address",        'valid_email'),
+            array('terms',      "Please Accept the Terms &amp; Conditions",  'required'),
+            array('subscribe',  "Please Accept the Terms &amp; Conditions",  'required'),
+            array('_captcha',   "We're not sure you're a human...",          'captcha')
+    
+        );  
+        
+        // validate for errors
+        $errors = $competition->validate($validation);
+        
+        // validate returns FALSE if no errors are found
+        if($errors===FALSE){
+            // save the data via the api call with the campaign name
+            $save = $competition->save('ign_gameforge');
+                        
+            if(isset($save['_auth']) && $save['_auth']=='failed'){
+                echo 'Error Authenticating With the API';           
+            }
              
-            // if the data was saved successfully  	
-        	if(isset($save['_saved'])==TRUE){
-	        
-	        //redirect to thankyou page
-	        	
-	        header('location: thankyou.php');
+            // if the data was saved successfully   
+            if(isset($save['_saved'])==TRUE){
+            
+            //redirect to thankyou page
+                
+            header('location: thankyou.php');
 
-        	}
-          		       
+            }
+                       
         }
                       
     } 
@@ -88,18 +67,18 @@ $competition = new HkCompAPI();
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-	<!-- Set the viewport width to device width for mobile -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>Hub template</title>
+	<title>Win a top spec gaming PC bundle in association with S.K.I.L.L.</title>
 
-	<meta property="og:title" content="SITENAME">
+	<meta property="og:title" content="Win a top spec gaming PC bundle in association with S.K.I.L.L.">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="">
-    <meta property="og:url" content="NEWURLPLEASE">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="http://uk-microsites.ign.com/gamesforge/">
+    <meta property="og:image" content="http://uk-microsites.ign.com/gamesforge/assets/images/skill_logo.png">
     <meta property="fb:admins" content="546507370">
     
     
@@ -127,44 +106,107 @@ $competition = new HkCompAPI();
     <header id="ignHeaderHeader">
 		<div id="ignHeader" class="clear">
 			<ul class="social-btns">
-	                <li>
-	                    <div class="fb-like" data-href="NEWURLPLEASE" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false"></div>
-	                </li>
+                <li>
+                    <div class="fb-like" data-href="http://uk-microsites.ign.com/gamesforge/" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false"></div>
+                </li>
 
-	                <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="NEWURLPLEASE" data-text="" data-via="IGNUK">Tweet</a></li>
+                <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://uk-microsites.ign.com/gamesforge/" data-text="" data-via="IGNUK">Tweet</a></li>
 
-	                <li>
-	                    <div class="g-plusone" data-size="tall" data-annotation="none" data-href="NEWURLPLEASE"></div>
-	                </li>
-	            </ul>
-				
-				<div id="ignHeader-userBar">
-					<div class="container"> <a id="ignHeader-logo" href="http://uk.ign.com/"></a>
-					</div>
+                <li>
+                    <div class="g-plusone" data-size="tall" data-annotation="none" data-href="http://uk-microsites.ign.com/gamesforge/"></div>
+                </li>
+            </ul>
+			
+			<div id="ignHeader-userBar">
+				<div class="container"> <a id="ignHeader-logo" href="http://uk.ign.com/"></a>
 				</div>
-
+			</div>
 		</div>
 	</header>
+
+    <div class="row"><a href="http://en.skill.gameforge.com/?kid=e-92507-A0E69-1312-e38051e0" target="_blank" class="register_btn skill bundle"><img src="assets/images/pc_gaming-bundle.png" alt="S.K.I.L.L."></a></div>
     
+    <div class="row"><a href="http://en.skill.gameforge.com/?kid=e-92507-A0E69-1312-e38051e0" target="_blank" class="register_btn"><img src="assets/images/register_btn.png" alt="Click here to register"></a></div>
+
+    <div class="row"><a href="http://en.skill.gameforge.com/?kid=e-92507-A0E69-1312-e38051e0" target="_blank" class="register_btn skill"><img src="assets/images/skill_logo.png" alt="S.K.I.L.L."></a></div>
+
+
+
+    <div class="orbit_wrapper">
+    	<ul class="example-orbit" data-orbit data-options="animation:fade; navigation_arrows:false; timer_speed: 5000; pause_on_hover:false;">
+          <li>
+            <img src="assets/images/SKILL_GAFE.jpg" alt="slide 2" />
+          </li>
+          <li>
+             <img src="assets/images/SKILL_Clan.jpg" alt="slide 1" />
+          </li>
+          <li>
+            <img src="assets/images/SKILL_SF2_Art_3.jpg" alt="slide 2" />
+          </li>
+          <li>
+            <img src="assets/images/SKILL_Thunder-Run.jpg" alt="slide 2" />
+          </li>
+        </ul>
+
+        <div class="row">
+            <div class="large_12 columns car_text">
+                <p>S.K.I.L.L. - Special Force 2 is the new fast-paced MMO first person shooter from Gameforge. Play as an elite member of the world-recognized Special Forces unit in fast-paced multiplayer action, enjoying individually customizable characters, varied maps, a wide choice of modes including Blasting <span class="light_blue">and the best thing of all?... It is Free To Play.</span><br>
+Play as an elite soldier in squads of up to 16 in an alternative near-future: the EU has collapsed, power has shifted and as the 2nd Cold War deepens, an alien race has landed on the Earth.</p>
+            </div>
+        </div>
+    </div>
     
-	<div class="row">
-		<div class="large-12 columns">
-			<h2>Ziff Davis Hub Template</h2>
-            <h4>Version 1.0</h4>
-		</div>
-	</div>
-    
+
+<!--     <a href="#_" class="examples_link" data-reveal-id="myModal">Need some inspiration? <span class="info_btn"></span></a> -->
+
     
     <!--competition-->
     <section id="competition" class="standard_container">
+
+    <div class="row">
+        <img src="assets/images/text-top.png" alt="TO WIN THE ULTIMATE GAMING RIG PLUS €50 WORTH OF IN-GAME CURRENCY 
+JUST ENTER YOUR DETAILS BELOW" class="rig_text">
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns forge_cont pc">
+            <img src="assets/images/pc.png" alt="pc image">
+
+            <p>The <a href="#_">Fusion Zed</a> is <a href="http://www.chillblast.com/ign.html" target="_blank">Chillblast</a>’s hottest gaming rig right now. Powered by an <a href="www.chillblast.com/Chillblast-Fusion-Zed.html" target="_blank">overclocked Core i5 4670K</a> and the awesome <a href="www.chillblast.com/Chillblast-Fusion-Zed.html">GTX 760 2GB</a> video card, it has the power to play any current game at the highest quality.</p>
+        </div>
+    </div>
+
+    <div class="row roccat">
+        <div class="large-4 columns forge_cont">
+            <div class="prize-cont">
+                <a href="http://www.roccat.org/Products/Gaming-Keyboards/ROCCAT-Isku-FX/" target="_blank"><img src="assets/images/keyboard.jpg" alt="Keyboard Isku FX"></a>
+                <p class="overlay_text">Keyboard Isku FX</p>
+            </div>
+        </div>
+        <div class="large-4 columns forge_cont">
+             <div class="prize-cont">
+                <a href="http://www.roccat.org/Products/Gaming-Mice/ROCCAT-Kone-Pure-Color/" target="_blank"><img src="assets/images/mouse.jpg" alt="Mouse Kone"></a>
+                <p class="overlay_text">Mouse Kone</p>
+            </div>
+        </div>
+        <div class="large-4 columns forge_cont">
+             <div class="prize-cont">
+                <a href="http://www.roccat.org/Products/Gaming-Sound/ROCCAT-Kulo-7-1-USB/" target="_blank"><img src="assets/images/headphones.jpg" alt="Headset Kulo 7.1"></a>
+                <p class="overlay_text">Headset Kulo 7.1</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row"><img src="assets/images/runner_up.jpg" alt="Plus 4 x runner-up prizes of €50 worth of in-game currency" class="runner_up-img"></div>
+
         <div class="row">
-            <div class="large-12 columns">
+            <div class="large-12 columns form_cont">
                 
             <?php 
 
                     if(isset($errors)){
                         // if there were errors in form processing show them here
-                        echo '<div class="alert alert-error"><h4>Wowzers!</h4><ul>';	       	        
+                        echo '<div class="alert alert-error"><ul>';	       	        
                             foreach($errors as $error){		        
                               echo '<li>'.$error.'</li>';  
                             }	        
@@ -175,25 +217,25 @@ $competition = new HkCompAPI();
 
             <form action="" method="post" class="form-horizontal">
                 <fieldset>
-                <legend>Competition</legend>
+
                      <div class="row">
-                        <div class="large-4 columns">
-                            <label>First Name</label>
+                        <div class="large-6 columns">
+                            <label>First Name<span class="astrix">*</span></label>
                             <input type="text" name="fname" value="<?php if(isset($_POST['fname'])){echo $_POST['fname'];}?>"> 
                         </div>
 
-                        <div class="large-4 columns">
-                            <label>Last Name</label>
+                        <div class="large-6 columns">
+                            <label>Last Name<span class="astrix">*</span></label>
                             <input type="text" name="lname" value="<?php if(isset($_POST['lname'])){echo $_POST['lname'];}?>"> 
                         </div>
                      
-                        <div class="large-4 columns">
-                            <label>Email</label>
+                        <div class="large-12 columns">
+                            <label>Email<span class="astrix">*</span></label>
                                 <input type="text" name="email" value="<?php if(isset($_POST['email'])){echo $_POST['email'];}?>"> 
                         </div>
                     </div>
                     
-                     <div class="row">
+                     <!--div class="row">
                         <div class="large-4 columns">
                             <label>Day</label>
                             <select name="_day" class="span1">
@@ -360,28 +402,30 @@ $competition = new HkCompAPI();
                             </select>
 
                          </div>
-                    </div>
+                    </div-->
 
                     <div class="clearfix"></div>
                     <div class="control-group full">
                         <div class="controls">
-                            <label class="checkbox"><input type="checkbox" name="terms" value="1">Terms &amp; Conditions</label>
-                            <span class="help-block">I confirm that I am a UK resident over the age of 18 and have <a href="tandc.php">read and understood the terms and conditions</a></span>
+                            <label class="checkbox"><input type="checkbox" name="terms" value="1"><span>I confirm that I am a UK resident over the age of 18 and have <a href="tandc.php">read and understood the terms and conditions</a><span class="astrix">*</span></span></label>
+                           <!--  <span class="help-block">I confirm that I am a UK resident over the age of 18 and have <a href="tandc.php">read and understood the terms and conditions</a></span> -->
                         </div>
                     </div>
                     
                     <div class="control-group full">
                         <div class="controls">
-                            <label class="checkbox"><input type="checkbox" name="subscribe" value="1">Newsletter</label>
-                            <span class="help-block">I agree that my email details can be used by IGN Entertainment and Warner Bros. Entertainment UK Limited to keep me informed of exciting new products, promotions and services until I choose otherwise.</span>
+                            <label class="checkbox"><input type="checkbox" name="subscribe" value="1"><span>I agree that my email details can be used by IGN Entertainment and Gameforge to keep me informed of exciting new products, promotions and services until I choose otherwise.<span class="astrix">*</span></span></label>
+                           <!--  <span class="help-block">I agree that my email details can be used by IGN Entertainment and Warner Bros. Entertainment UK Limited to keep me informed of exciting new products, promotions and services until I choose otherwise.</span> -->
                         </div>
                     </div>
+
+                    <p class="req_field-text"><span class="astrix">*</span>These form fields are required</p>
                     <div class="clearfix"></div>
                     
                     <div class="control-group full">
                         <div class="controls">
                             <input type="hidden" name="_captcha" value=""> 
-                            <input type="submit" value="Enter" class="button" name="_submit">
+                            <input type="submit" value="" class="button" name="_submit">
                         </div>
                     </div>
                     </fieldset>
@@ -391,11 +435,16 @@ $competition = new HkCompAPI();
     </section>
     <!--end competition section-->
 
-    
+    <div class="row">
+        <div class="twelve columns small_txt">
+            <p>© 2013 Developed by Dragonfly GF Co., Ltd. Published by Gameforge 4D GmbH. All rights reserved. All trademarks are the property of their respective owners.</p>
+        </div>
+    </div>
+
     <!-- start footer -->    
     <div id="ign_footer">
         <div class="ign-elements">
-            <div class="row">
+
                 <section class="large-6 columns">
                     <p class="corp-terms">Copyright 2013 <span class="white">IGN Entertainment UK, Inc.</span><br>
                      <a href="http://corp.ign.com/privacy.html" title="Privacy Policy">Privacy Policy</a> | <a href="http://corp.ign.com/user-agreement.html" title="User Agreement">User Agreement</a></p>
@@ -403,7 +452,7 @@ $competition = new HkCompAPI();
                 <section class="large-6 columns right">
                     <p class="corp-links"><a href="http://uk.corp.ign.com/#about" title="About Us">About Us</a> | <a href="http://uk.corp.ign.com/#contact" title="Contact Us">Contact Us</a> | <a href="http://corp.ign.com/feeds.html" title="RSS Feeds">RSS Feeds</a></p>
                 </section>
-              </div>
+
         </div>
     </div>
     <!--end footer-->
@@ -448,13 +497,17 @@ $competition = new HkCompAPI();
   <script>
     $(document).foundation();
   </script>
+
+  <script>
+
+  </script>
     
   <!--begin GA script-->
   <script type="text/javascript">
 
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-15279170-1']);
-	  _gaq.push(['_trackPageview', 'CAMPAIGNNAME']);
+	  _gaq.push(['_trackPageview', 'Gamesforge']);
 	
 	  (function() {
 	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -504,5 +557,13 @@ $competition = new HkCompAPI();
    <!--
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 -->
+
+<div id="myModal" class="reveal-modal">
+  <h2>Awesome. I have it.</h2>
+  <p class="lead">Your couch.  It is mine.</p>
+  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
 </body>
 </html>

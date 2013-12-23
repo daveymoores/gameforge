@@ -8,7 +8,7 @@
 
 /* line 11, ../sass/header-styles.scss */
 #ignHeader #ignHeader-userBar {
-  background: url(../assets/images/ign_bar.jpg) repeat-x top left;
+  background: black;
   height: 40px;
 }
 

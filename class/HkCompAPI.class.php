@@ -23,7 +23,7 @@ class HkCompAPI {
 		        $_POST['_campaign'] = $campaign;
 		
 		        // set options
-		        curl_setopt($ch, CURLOPT_URL, "https://harkable-clients.pagodabox.com/ign_api/api.php");
+		        curl_setopt($ch, CURLOPT_URL, "http://harkable-clients.gopagoda.com/ign_api/api.php");
 		        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 		        curl_setopt($ch, CURLOPT_USERPWD, 'admin:igngames');
 		        curl_setopt($ch, CURLOPT_POST, 1);

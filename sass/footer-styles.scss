@@ -5,6 +5,7 @@ footer {
   margin-bottom: 30px;
 }
 
+
 footer .top_btn {
   margin: -54px auto 0px;
   width: 201px;
@@ -65,7 +66,7 @@ div#ign_footer {
   background-color: #212121;
   height: auto;
   padding: 10px 0px;
-  border-top: 1px solid #333333;
+  border-top: 1px solid #cc7b13;
 }
 
 .ign-elements p {
@@ -73,11 +74,11 @@ div#ign_footer {
 }
 
 .ign-elements a {
-  color: #c6a129;
+  color: #ffffff;
 }
 
-.ign-elements .row {
-  background: url(../assets/images/html5.png) no-repeat center center;
+.ign-elements {
+  background: #0f0f0f url(../assets/images/html5.png) no-repeat center center;
 }
 
 p.corp-terms {
@@ -90,7 +91,7 @@ p.corp-terms {
 }
 
 p.corp-terms a {
-  color: #c6a129;
+  color: #ffffff;
 }
 
 .white {
@@ -107,7 +108,7 @@ p.corp-links {
 }
 
 p.corp-links a {
-  color: #c6a129;
+  color: #ffffff;
 }
 
 div#ign_footer p {

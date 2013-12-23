@@ -7244,3 +7244,14 @@ fieldset .button {
   font-size: 12px;
   margin-left: 30px;
 }
+
+/* line 342, ../sass/skill.scss */
+.thanks .tandc {
+  color: white;
+  font-weight: 100;
+}
+/* line 348, ../sass/skill.scss */
+.thanks h4, .thanks h3 {
+  text-align: center;
+  color: white;
+}

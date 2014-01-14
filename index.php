@@ -70,15 +70,14 @@ $competition = new HkCompAPI();
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>Win a top spec gaming PC bundle in association with S.K.I.L.L.</title>
 
 	<meta property="og:title" content="Win a top spec gaming PC bundle in association with S.K.I.L.L.">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="">
-    <meta property="og:url" content="http://uk-microsites.ign.com/gamesforge/">
-    <meta property="og:image" content="http://uk-microsites.ign.com/gamesforge/assets/images/skill_logo.png">
+    <meta property="og:url" content="http://uk-microsites.ign.com/gamesforge-comp/">
+    <meta property="og:image" content="http://uk-microsites.ign.com/gamesforge-comp/assets/images/skill_logo.png">
     <meta property="fb:admins" content="546507370">
     
     
@@ -107,13 +106,13 @@ $competition = new HkCompAPI();
 		<div id="ignHeader" class="clear">
 			<ul class="social-btns">
                 <li>
-                    <div class="fb-like" data-href="http://uk-microsites.ign.com/gamesforge/" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false"></div>
+                    <div class="fb-like" data-href="http://uk-microsites.ign.com/gamesforge-comp/" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false"></div>
                 </li>
 
-                <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://uk-microsites.ign.com/gamesforge/" data-text="" data-via="IGNUK">Tweet</a></li>
+                <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://uk-microsites.ign.com/gamesforge-comp/" data-text="" data-via="IGNUK">Tweet</a></li>
 
                 <li>
-                    <div class="g-plusone" data-size="tall" data-annotation="none" data-href="http://uk-microsites.ign.com/gamesforge/"></div>
+                    <div class="g-plusone" data-size="tall" data-annotation="none" data-href="http://uk-microsites.ign.com/gamesforge-comp/"></div>
                 </li>
             </ul>
 			
@@ -172,7 +171,7 @@ JUST ENTER YOUR DETAILS BELOW" class="rig_text">
         <div class="large-12 columns forge_cont pc">
             <img src="assets/images/pc.png" alt="pc image">
 
-            <p>The <a href="#_">Fusion Zed</a> is <a href="http://www.chillblast.com/ign.html" target="_blank">Chillblast</a>’s hottest gaming rig right now. Powered by an <a href="www.chillblast.com/Chillblast-Fusion-Zed.html" target="_blank">overclocked Core i5 4670K</a> and the awesome <a href="www.chillblast.com/Chillblast-Fusion-Zed.html">GTX 760 2GB</a> video card, it has the power to play any current game at the highest quality.</p>
+            <p>The <a href="http://www.chillblast.com/Chillblast-Fusion-Zed.html">Fusion Zed</a> is <a href="http://www.chillblast.com/ign.html" target="_blank">Chillblast</a>’s hottest gaming rig right now. Powered by an <a href="http://www.chillblast.com/Chillblast-Fusion-Zed.html" target="_blank">overclocked Core i5 4670K</a> and the awesome <a href="http://www.chillblast.com/Chillblast-Fusion-Zed.html">GTX 760 2GB</a> video card, it has the power to play any current game at the highest quality.</p>
         </div>
     </div>
 

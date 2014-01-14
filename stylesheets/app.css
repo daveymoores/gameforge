@@ -6894,13 +6894,302 @@ div#ign_footer p {
   }
 }
 /** skill scss **/
-/* line 3, ../sass/skill.scss */
+/* The Grid ---------------------- */
+/* line 4, ../sass/skill.scss */
+.lt-ie9 .row {
+  width: 940px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+}
+
+/* line 5, ../sass/skill.scss */
+.lt-ie9 .row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px;
+}
+
+/* line 7, ../sass/skill.scss */
+.lt-ie9 .row.large-collapse .column,
+.lt-ie9 .row.large-collapse .columns {
+  padding: 0;
+}
+
+/* line 8, ../sass/skill.scss */
+.lt-ie9 .row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px;
+}
+
+/* line 9, ../sass/skill.scss */
+.lt-ie9 .row .row.large-collapse {
+  margin: 0;
+}
+
+/* line 11, ../sass/skill.scss */
+.lt-ie9 .column, .lt-ie9 .columns {
+  float: left;
+  min-height: 1px;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* line 12, ../sass/skill.scss */
+.lt-ie9 .column.large-centered, .columns.large-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 14, ../sass/skill.scss */
+.lt-ie9 [class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+
+/* line 15, ../sass/skill.scss */
+.lt-ie9 [class*="column"] + [class*="column"].end {
+  float: left;
+}
+
+/* line 18, ../sass/skill.scss */
+.lt-ie9 .large-1,
+.lt-ie9 .row .large-1 {
+  width: 8.33333%;
+}
+
+/* line 21, ../sass/skill.scss */
+.lt-ie9 .large-2,
+.lt-ie9 .row .large-2 {
+  width: 16.66667%;
+}
+
+/* line 24, ../sass/skill.scss */
+.lt-ie9 .large-3,
+.lt-ie9 .row .large-3 {
+  width: 25%;
+}
+
+/* line 27, ../sass/skill.scss */
+.lt-ie9 .large-4,
+.lt-ie9 .row .large-4 {
+  width: 33.33333%;
+}
+
+/* line 30, ../sass/skill.scss */
+.lt-ie9 .large-5,
+.lt-ie9 .row .large-5 {
+  width: 41.66667%;
+}
+
+/* line 33, ../sass/skill.scss */
+.lt-ie9 .large-6,
+.lt-ie9 .row .large-6 {
+  width: 50%;
+}
+
+/* line 36, ../sass/skill.scss */
+.lt-ie9 .large-7,
+.lt-ie9 .row .large-7 {
+  width: 58.33333%;
+}
+
+/* line 39, ../sass/skill.scss */
+.lt-ie9 .large-8,
+.lt-ie9 .row .large-8 {
+  width: 66.66667%;
+}
+
+/* line 42, ../sass/skill.scss */
+.lt-ie9 .large-9,
+.lt-ie9 .row .large-9 {
+  width: 75%;
+}
+
+/* line 45, ../sass/skill.scss */
+.lt-ie9 .large-10,
+.lt-ie9 .row .large-10 {
+  width: 83.33333%;
+}
+
+/* line 48, ../sass/skill.scss */
+.lt-ie9 .large-11,
+.lt-ie9 .row .large-11 {
+  width: 91.66667%;
+}
+
+/* line 51, ../sass/skill.scss */
+.lt-ie9 .large-12,
+.lt-ie9 .row .large-12 {
+  width: 100%;
+}
+
+/* line 53, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 54, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 55, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 56, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 57, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 58, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 59, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 60, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 61, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 62, ../sass/skill.scss */
+.lt-ie9 .row .large-offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 64, ../sass/skill.scss */
+.lt-ie9 .pull-2 {
+  right: 16.66667%;
+}
+
+/* line 65, ../sass/skill.scss */
+.lt-ie9 .pull-3 {
+  right: 25%;
+}
+
+/* line 66, ../sass/skill.scss */
+.lt-ie9 .pull-4 {
+  right: 33.33333%;
+}
+
+/* line 67, ../sass/skill.scss */
+.lt-ie9 .pull-5 {
+  right: 41.66667%;
+}
+
+/* line 68, ../sass/skill.scss */
+.lt-ie9 .pull-6 {
+  right: 50%;
+}
+
+/* line 69, ../sass/skill.scss */
+.lt-ie9 .pull-7 {
+  right: 58.33333%;
+}
+
+/* line 70, ../sass/skill.scss */
+.lt-ie9 .pull-8 {
+  right: 66.66667%;
+}
+
+/* line 71, ../sass/skill.scss */
+.lt-ie9 .pull-9 {
+  right: 75%;
+}
+
+/* line 72, ../sass/skill.scss */
+.lt-ie9 .pull-10 {
+  right: 83.33333%;
+}
+
+/* line 74, ../sass/skill.scss */
+.lt-ie9 .push-2 {
+  left: 16.66667%;
+}
+
+/* line 75, ../sass/skill.scss */
+.lt-ie9 .push-3 {
+  left: 25%;
+}
+
+/* line 76, ../sass/skill.scss */
+.lt-ie9 .push-4 {
+  left: 33.33333%;
+}
+
+/* line 77, ../sass/skill.scss */
+.lt-ie9 .push-5 {
+  left: 41.66667%;
+}
+
+/* line 78, ../sass/skill.scss */
+.lt-ie9 .push-6 {
+  left: 50%;
+}
+
+/* line 79, ../sass/skill.scss */
+.lt-ie9 .push-7 {
+  left: 58.33333%;
+}
+
+/* line 80, ../sass/skill.scss */
+.lt-ie9 .push-8 {
+  left: 66.66667%;
+}
+
+/* line 81, ../sass/skill.scss */
+.lt-ie9 .push-9 {
+  left: 75%;
+}
+
+/* line 82, ../sass/skill.scss */
+.lt-ie9 .push-10 {
+  left: 83.33333%;
+}
+
+/* Nicolas Gallagher's micro clearfix */
+/* line 85, ../sass/skill.scss */
+.lt-ie9 .row {
+  *zoom: 1;
+}
+
+/* line 86, ../sass/skill.scss */
+.lt-ie9 .row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 87, ../sass/skill.scss */
+.lt-ie9 .row:after {
+  clear: both;
+}
+
+/* line 90, ../sass/skill.scss */
 body {
   background-color: black;
   font-family: 'helvetica-neue', helvetica, sans-serif;
 }
 
-/* line 8, ../sass/skill.scss */
+/* line 95, ../sass/skill.scss */
 .orbit-bullets {
   margin: 10px auto;
   display: block;
@@ -6912,7 +7201,7 @@ body {
   margin-left: -35px;
   z-index: 9999;
 }
-/* line 19, ../sass/skill.scss */
+/* line 106, ../sass/skill.scss */
 .orbit-bullets li {
   height: 9px;
   width: 9px;
@@ -6923,7 +7212,7 @@ body {
   box-shadow: 0px 1px 3px 0px #000000;
   margin-right: 8px;
 }
-/* line 29, ../sass/skill.scss */
+/* line 116, ../sass/skill.scss */
 .orbit-bullets li.active {
   background: #d58d21;
   /* Old browsers */
@@ -6943,7 +7232,7 @@ body {
   /* IE6-9 */
 }
 
-/* line 42, ../sass/skill.scss */
+/* line 129, ../sass/skill.scss */
 .car_text {
   background: transparent url(../assets/images/opacity_60.png) top center repeat;
   height: 202px;
@@ -6953,7 +7242,7 @@ body {
   width: 728px;
   margin-top: -191px;
 }
-/* line 51, ../sass/skill.scss */
+/* line 138, ../sass/skill.scss */
 .car_text p {
   color: white;
   text-align: center;
@@ -6962,29 +7251,29 @@ body {
   font-weight: 100;
 }
 
-/* line 60, ../sass/skill.scss */
+/* line 147, ../sass/skill.scss */
 .rig_text {
   margin: 45px 0px 20px;
   float: right;
 }
 
-/* line 65, ../sass/skill.scss */
+/* line 152, ../sass/skill.scss */
 .orbit-container {
   height: 500px;
   overflow: hidden;
 }
 
-/* line 70, ../sass/skill.scss */
+/* line 157, ../sass/skill.scss */
 #competition {
   background: black url(../assets/images/background_fade.png) no-repeat top center;
   background-size: 100% 100%;
 }
-/* line 74, ../sass/skill.scss */
+/* line 161, ../sass/skill.scss */
 #competition .form_cont {
   padding: 0px;
 }
 
-/* line 79, ../sass/skill.scss */
+/* line 166, ../sass/skill.scss */
 .register_btn {
   position: absolute;
   z-index: 999;
@@ -6993,38 +7282,38 @@ body {
   margin-top: 5%;
   margin-left: -85px;
 }
-/* line 87, ../sass/skill.scss */
+/* line 174, ../sass/skill.scss */
 .register_btn.skill {
-  margin-top: 12%;
+  margin-top: 170px;
   float: none;
   margin-left: -246px;
   left: 50%;
 }
-/* line 93, ../sass/skill.scss */
+/* line 180, ../sass/skill.scss */
 .register_btn.skill.bundle {
   margin-top: 2%;
 }
 
 /**form **/
-/* line 101, ../sass/skill.scss */
+/* line 188, ../sass/skill.scss */
 fieldset {
   border: 1px solid #965c0f;
   border-radius: 3px;
   background-color: #0F0F0F;
   color: white;
 }
-/* line 107, ../sass/skill.scss */
+/* line 194, ../sass/skill.scss */
 fieldset label {
   font-weight: 300;
   color: white;
   padding-bottom: 10px;
 }
-/* line 113, ../sass/skill.scss */
+/* line 200, ../sass/skill.scss */
 fieldset input[type="text"] {
   background-color: #ABABAB;
   border: 1px solid #ababab;
 }
-/* line 119, ../sass/skill.scss */
+/* line 206, ../sass/skill.scss */
 fieldset .button {
   background-image: url(../assets/images/button.png);
   width: 256px;
@@ -7041,26 +7330,26 @@ fieldset .button {
 
 /**end form**/
 /**prizing boxes**/
-/* line 138, ../sass/skill.scss */
+/* line 225, ../sass/skill.scss */
 .forge_cont {
   border: 1px solid #965c0f;
   border-radius: 3px;
   height: 132px;
   margin: 20px 0px;
 }
-/* line 144, ../sass/skill.scss */
+/* line 231, ../sass/skill.scss */
 .forge_cont.pc {
   background: transparent url(../assets/images/pattern.png) top center repeat;
   -moz-box-shadow: inset 0px 0px 20px 0px #83581b;
   -webkit-box-shadow: inset 0px 0px 20px 0px #83581b;
   box-shadow: inset 0px 0px 20px 0px #83581b;
 }
-/* line 151, ../sass/skill.scss */
+/* line 238, ../sass/skill.scss */
 .forge_cont.pc img {
   position: absolute;
   bottom: -14px;
 }
-/* line 156, ../sass/skill.scss */
+/* line 243, ../sass/skill.scss */
 .forge_cont.pc p {
   color: white;
   width: 65%;
@@ -7070,13 +7359,13 @@ fieldset .button {
   line-height: 23px;
   padding-top: 17px;
 }
-/* line 166, ../sass/skill.scss */
+/* line 253, ../sass/skill.scss */
 .forge_cont.pc a {
   font-weight: 500;
   color: white;
 }
 
-/* line 173, ../sass/skill.scss */
+/* line 260, ../sass/skill.scss */
 .roccat {
   border-radius: 3px;
   padding-bottom: 3px;
@@ -7084,19 +7373,19 @@ fieldset .button {
   background-size: 80px 60px;
   background: url(../assets/images/roccat_bg.jpg) top center;
 }
-/* line 181, ../sass/skill.scss */
+/* line 268, ../sass/skill.scss */
 .roccat .forge_cont {
   padding: 10px;
   border: none;
 }
-/* line 186, ../sass/skill.scss */
+/* line 273, ../sass/skill.scss */
 .roccat .prize-cont {
   border-radius: 3px;
   overflow: hidden;
   position: relative;
   margin-top: 20px;
 }
-/* line 193, ../sass/skill.scss */
+/* line 280, ../sass/skill.scss */
 .roccat .prize-cont p {
   color: white;
   width: 100%;
@@ -7118,14 +7407,14 @@ fieldset .button {
 }
 
 /**text image placement**/
-/* line 216, ../sass/skill.scss */
+/* line 303, ../sass/skill.scss */
 .runner_up-img {
   margin-top: 10px;
   display: block;
 }
 
 /**end text image placement**/
-/* line 226, ../sass/skill.scss */
+/* line 313, ../sass/skill.scss */
 .small_txt p {
   color: white;
   font-size: 9px;
@@ -7135,7 +7424,7 @@ fieldset .button {
   display: block;
 }
 
-/* line 236, ../sass/skill.scss */
+/* line 323, ../sass/skill.scss */
 .alert li {
   list-style: none;
   background-color: #f5dfdf;
@@ -7146,12 +7435,12 @@ fieldset .button {
   margin-bottom: 10px;
 }
 
-/* line 246, ../sass/skill.scss */
+/* line 333, ../sass/skill.scss */
 .checkbox {
   font-weight: 100;
   font-size: 14px;
 }
-/* line 250, ../sass/skill.scss */
+/* line 337, ../sass/skill.scss */
 .checkbox span {
   width: 95%;
   display: block;
@@ -7159,43 +7448,43 @@ fieldset .button {
   line-height: 18px;
   padding-top: 0px;
 }
-/* line 257, ../sass/skill.scss */
+/* line 344, ../sass/skill.scss */
 .checkbox span.astrix {
   width: auto;
   float: none;
   display: inline-block;
 }
-/* line 263, ../sass/skill.scss */
+/* line 350, ../sass/skill.scss */
 .checkbox span a {
   color: white;
 }
 
-/* line 269, ../sass/skill.scss */
+/* line 356, ../sass/skill.scss */
 .control-group {
   margin: 15px 0px;
 }
 
-/* line 273, ../sass/skill.scss */
+/* line 360, ../sass/skill.scss */
 .orbit-slide-number, .orbit-timer {
   display: none;
 }
 
-/* line 277, ../sass/skill.scss */
+/* line 364, ../sass/skill.scss */
 .social-btns {
   list-style: none;
 }
 
-/* line 282, ../sass/skill.scss */
+/* line 369, ../sass/skill.scss */
 .thanks #competition {
   padding-top: 25px;
   height: 550px;
 }
-/* line 287, ../sass/skill.scss */
+/* line 374, ../sass/skill.scss */
 .thanks #competition img {
   margin: 45px auto;
   display: block;
 }
-/* line 293, ../sass/skill.scss */
+/* line 380, ../sass/skill.scss */
 .thanks #competition .return {
   background-image: url(../assets/images/return.png);
   width: 256px;
@@ -7209,7 +7498,7 @@ fieldset .button {
   line-height: 0px;
   margin: 20px auto;
 }
-/* line 307, ../sass/skill.scss */
+/* line 394, ../sass/skill.scss */
 .thanks #competition .play {
   background-image: url(../assets/images/play_btn.png);
   width: 256px;
@@ -7224,13 +7513,13 @@ fieldset .button {
   margin: 20px auto;
 }
 
-/* line 323, ../sass/skill.scss */
+/* line 410, ../sass/skill.scss */
 .light_blue {
   color: #B3E2F7;
   font-weight: 500;
 }
 
-/* line 328, ../sass/skill.scss */
+/* line 415, ../sass/skill.scss */
 .astrix {
   color: #e24545;
   font-size: 12px;
@@ -7238,19 +7527,19 @@ fieldset .button {
   line-height: 22px;
 }
 
-/* line 335, ../sass/skill.scss */
+/* line 422, ../sass/skill.scss */
 .req_field-text {
   color: #e24545;
   font-size: 12px;
   margin-left: 30px;
 }
 
-/* line 342, ../sass/skill.scss */
+/* line 429, ../sass/skill.scss */
 .thanks .tandc {
   color: white;
   font-weight: 100;
 }
-/* line 348, ../sass/skill.scss */
+/* line 435, ../sass/skill.scss */
 .thanks h4, .thanks h3 {
   text-align: center;
   color: white;

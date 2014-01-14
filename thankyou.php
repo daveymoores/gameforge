@@ -8,7 +8,6 @@
 	<meta charset="utf-8" />
 
 	<!-- Set the viewport width to device width for mobile -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>Win a top spec gaming PC bundle in association with S.K.I.L.L.</title>
 

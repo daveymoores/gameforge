@@ -85,15 +85,15 @@ London W1T 3EZ. (The Promoter) </span></p>
 
 <p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-size:
 11.0pt;line-height:150%;'>&nbsp;<br>
-3.&nbsp; The Prize Draw commences at <span style=''>10am (GMT)
+3.&nbsp; The Prize Draw commences at <span style=''>6pm (GMT)
 on <span class=msoIns><ins
-cite="mailto:David%20Moores" datetime="2013-12-23T15:56">24 </ins></span>December
-2013</span> and closes at 10am (GMT) on <span
+cite="mailto:David%20Moores" datetime="2013-12-23T15:56">23 </ins></span>December
+2013</span> and closes at 11:59pm (GMT) on <span
 class=msoIns><ins cite="mailto:David%20Moores" datetime="2013-12-23T15:56">05 </ins></span>January
 2014 (the &quot;Promotion Period). <br>
 &nbsp;<br>
 4.&nbsp; Entry is open to users who are legally resident in the United Kingdom
-and are eighteen (18) years of age or over.</span><span lang=EN-AU
+and are sixteen (16) years of age or over.</span><span lang=EN-AU
 style='font-size:11.0pt;line-height:150%;'> (Eligible
 Entrants)</span><span lang=EN-US style='font-size:11.0pt;line-height:150%;
 '><br>
@@ -109,7 +109,7 @@ Draw and their immediate families are ineligible to enter this Prize Draw. <br>
 style='font-size:11.0pt;line-height:150%;'> To enter the Prize
 Draw, entrants must input their details on the competition entry page located
 at: <b><span class=msoIns><ins cite="mailto:David%20Moores"
-datetime="2013-12-23T15:54">http://uk-microsites.ign.com/gamesforge/ </ins></span><span
+datetime="2013-12-23T15:54">http://uk-microsites.ign.com/gamesforge-comp/ </ins></span><span
 style=''></span></span></b></span><span
 lang=EN-US style='font-size:11.0pt;line-height:150%;'><span
 class=msoDel><del cite="mailto:David%20Moores" datetime="2013-12-23T15:54">&nbsp;</del></span>and
